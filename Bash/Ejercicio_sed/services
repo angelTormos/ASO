@@ -1,0 +1,117 @@
+
+echo		7/tcp
+echo		7/udp
+discard		9/tcp		sink null
+discard		9/udp		sink null
+systat		11/tcp		users
+daytime		13/tcp
+daytime		13/udp
+netstat		15/tcp
+qotd		17/tcp		quote
+chargen		19/tcp		ttytst source
+chargen		19/udp		ttytst source
+ftp-data	20/tcp
+ftp		21/tcp
+fsp		21/udp		fspd
+telnet		23/tcp
+smtp		25/tcp		mail
+time		37/tcp		timserver
+time		37/udp		timserver
+whois		43/tcp		nicname
+tacacs		49/udp
+domain		53/udp
+bootps		67/udp
+bootpc		68/udp
+tftp		69/udp
+finger		79/tcp
+sunrpc		111/udp		portmapper
+auth		113/tcp		authentication tap ident
+snmp		161/udp
+snmp-trap	162/udp		snmptrap
+cmip-man	163/udp
+cmip-agent	164/tcp
+cmip-agent	164/udp
+ptp-event	319/udp
+ptp-general	320/udp
+rpc2portmap	369/tcp
+codaauth2	370/tcp
+clearcase	371/udp		Clearcase
+ldap		389/udp
+svrloc		427/udp
+kpasswd		464/tcp
+kpasswd		464/udp
+rtsp		554/udp
+qmqp		628/tcp
+ldp		646/udp
+exec		512/tcp
+biff		512/udp		comsat
+login		513/tcp
+who		513/udp		whod
+syslog		514/udp
+talk		517/udp
+ntalk		518/udp
+gdomap		538/udp
+dhcpv6-client	546/udp
+dhcpv6-server	547/udp
+ldaps		636/udp
+tinc		655/udp
+silc		706/tcp
+rsync		873/tcp
+ftps		990/tcp
+proofd		1093/tcp
+rootd		1094/tcp
+openvpn		1194/tcp
+openvpn		1194/udp
+ingreslock	1524/tcp
+datametrics	1645/tcp	old-radius
+datametrics	1645/udp	old-radius
+sa-msg-port	1646/tcp	old-radacct
+sa-msg-port	1646/udp	old-radacct
+kermit		1649/tcp
+groupwise	1677/tcp
+l2f		1701/udp	l2tp
+radius		1812/tcp
+radius		1812/udp
+radius-acct	1813/udp	radacct
+gnunet		2086/tcp
+gnunet		2086/udp
+rtcm-sc104	2101/udp
+gsigatekeeper	2119/tcp
+mon		2583/udp
+f5-globalsite	2792/tcp
+gsiftp		2811/tcp
+gpsd		2947/tcp
+iscsi-target	3260/tcp
+mysql		3306/tcp
+ms-wbt-server	3389/tcp
+nut		3493/udp
+sip		5060/udp
+sip-tls		5061/tcp
+sip-tls		5061/udp
+cfengine	5308/tcp
+amqp		5672/tcp
+amqp		5672/sctp
+x11-1		6001/tcp
+x11-2		6002/tcp
+x11-3		6003/tcp
+x11-4		6004/tcp
+x11-5		6005/tcp
+x11-6		6006/tcp
+x11-7		6007/tcp
+gnutella-svc	6346/udp
+gnutella-rtr	6347/udp
+redis		6379/tcp
+bbs		7000/tcp
+afs3-fileserver 7000/udp
+dicom		11112/tcp
+
+
+
+kerberos4	750/tcp		kerberos-iv kdc
+kerberos-master	751/tcp
+
+xinetd		9098/tcp
+webmin		10000/tcp
+sgi-crsd	17002/udp
+asp		27374/udp
+
