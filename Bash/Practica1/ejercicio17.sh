@@ -1,12 +1,13 @@
 #!/bin/bash
+suma=0
 
-suma = 0
-
-while True:
-    numero = int(input("Introduce un número (0 para terminar): "))
-    if numero == 0:
+while true; do
+    read -p "Introduce un número (0 para terminar): " numero
+    if [ "$numero" -eq 0 ]; then
         break
-    suma += numero
-    print(f"Suma actual: {suma}")
+    fi
+    suma=$((suma + numero))
+    echo "Suma actual: $suma"
+done
 
-print(f"Resultado final: {suma}")
+echo "Resultado final: $suma"
