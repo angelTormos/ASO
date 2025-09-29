@@ -17,6 +17,7 @@ directorios=$(find "$dir" -maxdepth 1 -type d | wc -l)
 
 directorios=$((directorios - 1))
 
-echo "📂 Estadísticas de $dir"
+echo "Estadísticas de $dir"
 echo "Ficheros: $ficheros"
 echo "Subdirectorios: $directorios"
+
